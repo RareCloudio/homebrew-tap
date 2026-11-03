@@ -5,12 +5,12 @@
 class Rarecloud < Formula
   desc "RareCloud CLI - manage servers, clusters, billing and account."
   homepage "https://rarecloud.io"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.0/rarecloud_0.5.0_darwin_amd64.tar.gz"
-      sha256 "d567c9008564f779dc7d3477bd2bd180111330db279019940ae3eea205260ced"
+      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.1/rarecloud_0.5.1_darwin_amd64.tar.gz"
+      sha256 "0c68c11941ab86d33335fee04f0ff1f8d19d65724617e896f4446c8563eaf8b1"
 
       define_method(:install) do
         bin.install "rarecloud"
@@ -19,8 +19,8 @@ class Rarecloud < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.0/rarecloud_0.5.0_darwin_arm64.tar.gz"
-      sha256 "7b87c668b07d009e22f514cf6e9e1fd1c4ef20b11a52379e9fabe36550d489e6"
+      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.1/rarecloud_0.5.1_darwin_arm64.tar.gz"
+      sha256 "30b45bfcb1d1269586308bbd795868a0de6809a33fec70d8a076e42b94c7186a"
 
       define_method(:install) do
         bin.install "rarecloud"
@@ -32,8 +32,8 @@ class Rarecloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.0/rarecloud_0.5.0_linux_amd64.tar.gz"
-      sha256 "0eef3bc18794e0ccd3f2b5a24246da3776054e53cb493800f7f0bef63053b756"
+      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.1/rarecloud_0.5.1_linux_amd64.tar.gz"
+      sha256 "24c4fa87fdd7319dd69580f74a04ee71f799a68060686f5523b47cba0b99090e"
       define_method(:install) do
         bin.install "rarecloud"
         bin.install_symlink "rarecloud" => "rcloud"
@@ -41,8 +41,8 @@ class Rarecloud < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.0/rarecloud_0.5.0_linux_arm64.tar.gz"
-      sha256 "8db68e5dc24de7aaa1b2fedd038eab6e330686e284b5adaedce991c6d371a7b5"
+      url "https://github.com/RareCloudio/rarecloud-cli/releases/download/v0.5.1/rarecloud_0.5.1_linux_arm64.tar.gz"
+      sha256 "c99f16df14fcb1c3367c7bc5a84e50eb5d14e360793d2e9b5985f310d283455c"
       define_method(:install) do
         bin.install "rarecloud"
         bin.install_symlink "rarecloud" => "rcloud"
